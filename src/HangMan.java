@@ -1,3 +1,5 @@
+import java.io.*;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
 import  java.util.Scanner;
@@ -10,6 +12,7 @@ class HangMan {
         StringBuilder attempt;
         char charGuess;
         String[] wordList = {"pickles", "carnival", "dance", "karaoke"};
+        String[] fullWordList = getFullWordList();
         Random rand = new Random();
 
         HashSet<Character> incorrectGuesses = new HashSet<>();
@@ -26,7 +29,7 @@ class HangMan {
             System.out.println("We have started our Hangman game! ");
 
             // Initialize game state
-            goal = wordList[rand.nextInt(wordList.length)];
+            goal = fullWordList[rand.nextInt(fullWordList.length)];
             neededLetters = goal.length();
             remainingGuesses = 5;
             correctGuesses.clear();
@@ -38,7 +41,8 @@ class HangMan {
 
             while (remainingGuesses > 0 && !discoveredWord) {
                 System.out.println("You have " + remainingGuesses +
-                        " incorrect guesses remaining.");
+                        " incorrect guesses remaining to guess the " + neededLetters
+                        + " letter word.");
                 System.out.println("Please enter your next guess");
                 guess = input.nextLine();
                 if (guessValid(guess) && !correctGuesses.contains(guess.charAt(0)) &&
@@ -75,6 +79,29 @@ class HangMan {
         System.out.println("Thanks for playing Hangman");
     }
 
+    private static String[] getFullWordList() {
+        File file = new File("C:\\Users\\stmon\\IdeaProjects\\HangMan\\scrabble_dict.txt");
+        ArrayList<String> wordList = new ArrayList<>();
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String word;
+            while ((word = br.readLine()) != null) {
+                wordList.add(word.toLowerCase());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Couldn't find the file: " + file);
+            System.exit(0);
+        } catch (IOException e) {
+            System.out.println("I/O Exception occurred!");
+            System.exit(0);
+        }
+
+        String[] res = new String[wordList.size()];
+        res = wordList.toArray(res);
+        return res;
+    }
+
     private static void initializeAttempt(StringBuilder attempt, int neededLetters) {
         for (int i = 0; i < neededLetters; i++) {
             attempt.append("_");
@@ -98,7 +125,7 @@ class HangMan {
         String playGame = input.nextLine().toLowerCase();
         while (!"yes".equals(playGame) && !"no".equals(playGame)) {
             System.out.println("Sorry, I don't understand. Do you want " +
-                    " to play Hangman? (yes/no)");
+                    "to play Hangman? (yes/no)");
             playGame = input.nextLine();
         }
         return "yes".equals(playGame);

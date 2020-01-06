@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e64a03c1-a676-4ceb-aaaf-50cda5f370d7" name="Default Changelist" comment="">
+    <list default="true" id="e64a03c1-a676-4ceb-aaaf-50cda5f370d7" name="Default Changelist" comment="Key game functionality implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HangMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HangMan.java" afterDir="false" />
     </list>
@@ -34,6 +34,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stmon\IdeaProjects\HangMan" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="HangMan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -74,27 +79,35 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Key game functionality implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Key game functionality implemented" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1578193557542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1578193557542" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1578284268367">
+    <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1578284324910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578284268367" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1578284268367">
+    <state x="614" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578284324910" />
+    <state width="916" height="281" key="GridCell.Tab.0.bottom" timestamp="1578286885925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578284268367" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1578284268367">
+    <state width="916" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578286885925" />
+    <state width="916" height="281" key="GridCell.Tab.0.center" timestamp="1578286885925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578284268367" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1578284268367">
+    <state width="916" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578286885925" />
+    <state width="916" height="281" key="GridCell.Tab.0.left" timestamp="1578286885924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578284268367" />
+    <state width="916" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578286885924" />
+    <state width="916" height="281" key="GridCell.Tab.0.right" timestamp="1578286885925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="916" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578286885925" />
     <state x="1103" y="225" key="search.everywhere.popup" timestamp="1578195926088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
